@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wild Eats.Com</title>
+    <link rel="shortcut icon" href="Raw/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/wild_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.css?v2.4.1">
+    <link rel="stylesheet" href="css/wild_phone.css">
+    <link rel="stylesheet" href="css/loader.css">
+</head>
+
+<body>
+
+
+    <!--? css loader -->
+    <div class="loader-wrapper">
+        <h1>Cooking in progress..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+
+        <!--? navigatin -->
+        <section id="body" class="home" data-index="0">
+            <header>
+                <nav>
+                    <div id="logo">
+                        <img src="Raw/logo.png" alt="">
+                    </div>
+                    <ul class="nav-links">
+                        <li><a data-page="home" href="#body">Home</a></li>
+                        <li><a data-page="service" href="#services-container">Services</a></li>
+                        <li><a data-page="about" href="#about">About us</a></li>
+                        <li><a data-page="image-g" href="#image-g">Image Gallery</a></li>
+                        <li><a data-page="contact" href="#contact">Contact Us</a></li>
+                        <div class="scroll-color"></div>
+                    </ul>
+                    <div class="nav-title">
+                        <h4 class="nav">Wild</h4>
+                        <h4 class="nav">Eats</h4>
+                    </div>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+
+            </header>
+
+
+            <!--*  top -->
+
+            <div class="scroll-top" onclick="scrollToTop()">
+                <img src="Raw/top-i.png" alt="">
+                <p>TOP</p>
+            </div>
+
+
+            <!--? home -->
+
+            <div id="home">
+                <div id="video">
+                    <video src="./Raw/bg.mp4" autoplay="true" loop="true"></video>
+                </div>
+                <div class="overlay"></div>
+                <div id="home-main-h">
+                    <h1 class="home-main-h1">Wild Eats.</h1>
+                    <h2 class="home-main-h2">Welcome To The World Of Tasty And Healthy Food</h2>
+                    <a href="#about"> <button class="home-main-btn btn-effects btn-border-pop">Learn More</button></a>
+                </div>
+            </div>
+
+
+            <!--? home2 -->
+
+            <div id="home2">
+
+                <div id="home2-boxs">
+
+                    <div id="home2-box1" class="home2-sub-box">
+
+                        <div class="homemain-box onclick" id="btn-box-1">
+                            <h1 class="h-primary0 center">Wild Eats.</h1>
+                            <h2 class="h-primary4">Welcome To World Of Tasty Food</h2>
+
+                            <div id="location">
+                                <label for="Location">Location:- </label>
+                                <input type="search" name="" id="location" placeholder="Enter Your City Name">
+                            </div>
+                            <div class="home2-btn">
+                                <div class="btn-box1">
+                                    <button class="btn btn-effects btn-bg-slide" onclick="btn1()">Order Now</button>
+                                    <button class="btn btn-effects btn-bg-slide" onclick="btn2()">Book Rooms</button>
+                                </div>
+                                <div class="btn-box2">
+                                    <button class="btn btn-effects btn-bg-slide" onclick="btn3()">Reserve Table</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="homemain-box" id="btn-box-2">
+                            <button class="back" onclick="back()"><img src="Raw/back.png" alt=""></button>
+                            <h1 class="h-primary1">Reserve The Table</h1>
+                            <div class="reserve">
+                                <div class="reserve-inputs">
+                                    <label for="Name">Name:- </label>
+                                    <input type=text" name="name" id="name" placeholder="Enter Your Name">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Mobile:- </label>
+                                    <input type="phone" name="no" id="no" placeholder="Enter Your Mobile No">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">People:- </label>
+                                    <input type=text" name="people" id="people" placeholder="No Of People">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Time:- </label>
+                                    <input type="datetime-local" name="date" id="date">
+                                </div>
+                            </div>
+                            <button class="btn reserve-btn btn-effects btn-bg-slide" onclick="btnT()">Reserve
+                                Now</button>
+                        </div>
+
+                        <div class="homemain-box" id="btn-box-3">
+                            <button class="back" onclick="back()"><img src="Raw/back.png" alt=""></button>
+                            <h1 class="h-primary1">Book The Rooms</h1>
+
+                            <div class="reserve">
+                                <div class="reserve-inputs">
+                                    <label for="Name">Name:- </label>
+                                    <input type=text" name="name" id="name" placeholder="Enter Your Name">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Mobile:- </label>
+                                    <input type="phone" name="no" id="no" placeholder="Enter Your Mobile No">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Rooms:- </label>
+                                    <input type=text" name="people" id="people" placeholder="No Of Rooms">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Date:- </label>
+                                    <input type="datetime-local" name="date" id="date">
+                                </div>
+                            </div>
+                            <button class="btn reserve-btn btn-effects btn-bg-slide" onclick="btnR()">Book Now</button>
+                        </div>
+
+                        <div class="homemain-box" id="btn-box-4">
+                            <button class="back" onclick="back()"><img src="Raw/back.png" alt=""></button>
+                            <h1 class="h-primary1">Order The Food</h1>
+                            <div class="reserve">
+                                <div class="reserve-inputs">
+                                    <label for="Name">Name:- </label>
+                                    <input type=text" name="name" id="name" placeholder="Enter Your Name">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Mobile:- </label>
+                                    <input type="phone" name="no" id="no" placeholder="Enter Your Mobile No">
+                                </div>
+                                <div class="reserve-inputs">
+                                    <label for="Name">Address:- </label>
+                                    <input type=text" name="people" id="people" placeholder="Enter Your Address">
+                                </div>
+                            </div>
+                            <h2 class="h-primary3">We Will Call You Now To Take Your Food Order</h2>
+                            <button class="btn reserve-btn btn-effects btn-bg-slide" onclick="btnF()">Order Now</button>
+                        </div>
+
+                    </div>
+
+                    <div id="home2-box2" class="home2-sub-box">
+                        <div id="home2-bgimage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? services -->
+
+        <section class="service" data-index="1">
+            <div id="services-container">
+                <div id="services-wrapper">
+                    <h1 class="h-primary center">Our Services</h1>
+
+                    <div id="services-boxes">
+
+                        <div class="service-card" data-aos="fade-left">
+                            <div class="box box-img">
+                                <img src="Raw/1.jpg" alt="">
+                            </div>
+                            <div class="box box-text">
+                                <h2 class="h-box">Best Food And Dine In Experience</h2>
+
+                                <p class="p-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse
+                                    soluta
+                                    incidunt, a ad possimus provident optio earum magni</p>
+                                <a href="#home2"><button class="pg2-btn btn-effects btn-bg-slide-middle"
+                                        onclick="btn3()">Reserve
+                                        Table</button></a>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-aos="fade-right">
+                            <div class="box box-img" id="displace">
+                                <img src="Raw/2.jpg" alt="">
+                            </div>
+                            <div class="box box-text">
+                                <h2 class="h-box">Best On Time Food Delivery Experience</h2>
+
+                                <p class="p-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse
+                                    soluta
+                                    incidunt, a ad possimus provident optio earum magni</p>
+                                <a href="#home2"><button class="pg2-btn btn-effects btn-bg-slide-middle"
+                                        onclick="btn1()">Order
+                                        Now</button></a>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-aos="fade-left">
+                            <div class="box box-img">
+                                <img src="Raw/3.jpg" alt="">
+                            </div>
+                            <div class="box box-text">
+                                <h2 class="h-box">Best Staying Experience With World Class Rooms</h2>
+                                <p class="p-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse
+                                    soluta
+                                    incidunt, a ad possimus provident optio earum magni</p>
+                                <a href="#home2"><button class="pg2-btn btn-effects btn-bg-slide-middle"
+                                        onclick="btn2()">Book
+                                        Rooms</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? About -->
+
+        <section class="about" id="about" data-index="2">
+            <div id="about">
+                <div class="about-intro">
+                    <div class="intro-title-box">
+                        <div class="intro-box1">
+                            <img src="Raw/logo.png" alt="">
+                        </div>
+                        <div class="intro-box2 ">
+                            <h1 id="about-h1">Wild Eats.</h1>
+                            <h2 id="about-h2">Introduction</h2>
+                        </div>
+                    </div>
+                    <p class="p-intro intro-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis nam obcaecati
+                        molestias
+                        ducimus
+                        officiis ab praesentium saepe, distinctio fugiat iste tenetur possimus, eos reiciendis quod
+                        facilis
+                        rem
+                        nemo
+                        inventore reprehenderit assumenda? Aliquam ratione magni accusamus veritatis deserunt, voluptate
+                        eos.
+                    </p>
+                </div>
+                <div class="cards-border">
+                    <h1 class="testimonial">TESTIMONAILS</h1>
+                    <div class="about-card-box intro-text1">
+                        <div class="card ">
+                            <img src="Raw/cards/1.png" alt="">
+
+                            <p class="p-about "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                illum
+                                at dolore
+                                nisi. Necessitatibus cupiditate magni laborum ipsum vitae .</p>
+                        </div>
+                        <div class="card">
+                            <img src="Raw/cards/2.png" alt="">
+                            <p class="p-about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                illum at
+                                dolore
+                                nisi. Necessitatibus cupiditate magni laborum ipsum vitae.</p>
+                        </div>
+                        <div class="card">
+                            <img src="Raw/cards/3.png" alt="">
+                            <p class="p-about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                illum at
+                                dolore
+                                nisi. Necessitatibus cupiditate magni laborum ipsum vitae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--? image Gallery -->
+
+        <section class="image-g" id=" data-index=" 3">
+            <div id="image-g">
+                <div id="image-wrapper">
+                    <h1 class="h-primary">
+                        Image Gallery
+                    </h1>
+                    <div class="gallery">
+
+                        <div class="img">
+                            <a href="Raw/gallery/i1.jpg"><img src="Raw/gallery/i1.jpg" alt="" /></a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i2.jpg"><img src="Raw/gallery/i2.jpg" alt="" /> </a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i3.jpg"> <img src="Raw/gallery/i3.jpg" alt="" /> </a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i4.jpg"> <img src="Raw/gallery/i4.jpg" alt="" /> </a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i5.jpg"><img src="Raw/gallery/i5.jpg" alt="" /> </a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i6.jpg"> <img src="Raw/gallery/i6.jpg" alt="" /> </a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i7.jpg"> <img src="Raw/gallery/i7.jpg" alt="" /> </a>
+                        </div>
+
+                        <div class="img">
+                            <a href="Raw/gallery/i8.jpg"><img src="Raw/gallery/i8.jpg" alt="" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--? contact -->
+        <section class="contact" data-index="4">
+            <div id="contact">
+                <h1 class="h-primary center">Say Hello</h1>
+
+                <div class="contact-box">
+                    <div class="contact-inputs">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="contact-inputs-box">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/name.png" />
+                                <label class="custom-filed">
+                                    <input type="text" name="name" required />
+                                    <span class="placeholder">Name</span>
+                                </label>
+                            </div>
+
+                            <div class="contact-inputs-box">
+                                <img src="https://img.icons8.com/dusk/64/000000/email.png" />
+                                <label class="custom-filed">
+                                    <input type="email" name="email" required />
+                                    <span class="placeholder">Email</span>
+                            </div>
+
+                            </label>
+                            <div class="contact-inputs-box">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/number-pad.png" />
+                                <label class="custom-filed">
+                                    <input type="tel" name="phone" required />
+                                    <span class="placeholder">phone No.</span>
+                                </label>
+                            </div>
+
+                            <div class="contact-inputs-box">
+                                <img src="https://img.icons8.com/color/48/000000/address.png" />
+                                <label class="custom-filed">
+                                    <input type="text" name="address" required />
+                                    <span class="placeholder">Address</span>
+                                </label>
+                            </div>
+
+                            <div class="contact-inputs-box">
+                                <img src="https://img.icons8.com/fluent/48/000000/ask-question.png" />
+                                <label class="custom-filed">
+                                    <input type="text" name="subject" required />
+                                    <span class="placeholder">Subject</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-text">
+                        <form name="form-2" method="POST" data-netlify="true">
+                            <label for="">How Can We Help You</label>
+                            <textarea name="querry" id="querry" cols="30" rows="10"
+                                placeholder="Feel free to say"></textarea>
+                            <button class="contact-btn btn-effects btn-bg-circle">SUBMIT</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-box">
+
+                            <h3 class="info-h3">Our Info</h3>
+
+                            <div class="info-sub-box">
+                                <h4 class="info-h4">Address</h4>
+                                <p class="info-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                                    corrupti.
+                                </p>
+                            </div>
+
+                            <div class="info-sub-box">
+                                <h4 class="info-h4">Email</h4>
+                                <p class="info-p">contactus@wildeats.com</p>
+                            </div>
+
+                            <div class="info-sub-box">
+                                <h4 class="info-h4">Phone No.</h4>
+                                <p class="info-p">5324845524</p>
+                                <p class="info-p">3645847698</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--?  footer -->
+
+        <footer>
+            <div class="center">
+                Copyright &copy; www.WildEats.com. All rights reserved!
+            </div>
+        </footer>
+    </div>
+
+    <!-- ? scripts -->
+
+    <script src="js/simple-lightbox.js?v2.4.1"></script>
+
+    <script>
+        (function () {
+            var $gallery = new SimpleLightbox('.gallery a', {});
+        })();
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
